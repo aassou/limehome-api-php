@@ -1,0 +1,17 @@
+App\Entity\Question:
+    reservation_{1..10}:
+        checkin: <dateTime()>
+        checkout: <dateTime()>
+        firstname: <firstName()>
+        lastname: <lastName()>
+        billingAddress: <text()>
+        billingCountry: <text()>
+        postalCode: <numberBetween(10000, 100000)>
+        city: <text()>
+        email: <email()>
+        phone: <numberBetween(10000, 100000)>
+        created: <dateTime()>
+        createdBy: <text()>
+        updated: <dateTime()>
+        updatedBy: <text()>
+        isPublished: <boolean(35)>
